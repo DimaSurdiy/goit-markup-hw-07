@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Палитра цветов текста:
 основной цвет текста: #757575
 вторичный цвет текста: #212121
@@ -5,12 +6,10 @@
 чёрный цвет: #000000
 белый цвет: #ffffff
 белый прозначный цвет: rgba(255, 255, 255, 0.6) */
-
 /* Палитра цветов фона:
 белый фон: #ffffff;
 фон секции герой и футера: #2F303A
 фон секции команда: #F5F4FA */
-
 :root {
   --main-text-color: #757575;
   --title-text-color: #212121;
@@ -18,15 +17,13 @@
   --black-color: #000000;
   --white-color: #ffffff;
   --white-alpha-color: rgba(255, 255, 255, 0.6);
-
   --bg-dark-color: #2f303a;
   --bg-grey-color: #f5f4fa;
 }
 
 body {
-  color: var(--main-text-color);
-
   font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
 }
 
 ul {
@@ -73,11 +70,8 @@ a {
   clip: rect(0 0 0 0);
 }
 
-/*-------- Шапка сайта --------*/
-
 .page-header {
   border-bottom: 1px solid #ececec;
-
   background-color: var(--white-color);
 }
 
@@ -85,13 +79,9 @@ a {
   display: flex;
 }
 
-/*-------- Логотип --------*/
-
 .logo {
   margin-right: 93px;
-
   color: var(--black-color);
-
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -103,8 +93,6 @@ a {
 .logo span {
   color: var(--accent-color);
 }
-
-/*-------- Навигация сайта --------*/
 
 .main-nav {
   display: flex;
@@ -123,15 +111,12 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -142,7 +127,6 @@ a {
 
 .nav-list .current {
   position: relative;
-
   color: var(--accent-color);
 }
 
@@ -150,16 +134,12 @@ a {
   position: absolute;
   left: 0;
   bottom: -1px;
-
   content: '';
   width: 100%;
   height: 4px;
   border-radius: 2px;
-
   background-color: var(--accent-color);
 }
-
-/*-------- Контакты --------*/
 
 .contacts {
   display: flex;
@@ -176,13 +156,11 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   color: inherit;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -204,8 +182,6 @@ a {
   fill: var(--accent-color);
 }
 
-/*-------- Секция герой --------*/
-
 .hero {
   max-width: 1600px;
   min-height: 600px;
@@ -213,14 +189,11 @@ a {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-
   background-color: var(--bg-dark-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-bg.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   text-align: center;
 }
 
@@ -228,9 +201,7 @@ a {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-
   color: var(--white-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -243,10 +214,8 @@ a {
   padding: 10px 10px;
   border-radius: 4px;
   border: none;
-
   background-color: var(--accent-color);
   color: var(--white-color);
-
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -254,7 +223,6 @@ a {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -262,8 +230,6 @@ a {
 .hero-btn:focus {
   background-color: #188ce8;
 }
-
-/*-------- Секция особенности --------*/
 
 .features-list {
   display: flex;
@@ -290,9 +256,7 @@ a {
 
 .features-list .title {
   margin-bottom: 10px;
-
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -306,8 +270,6 @@ a {
   letter-spacing: 0.03em;
 }
 
-/*-------- Секция чем мы занимаемся --------*/
-
 .about {
   padding-top: 0;
 }
@@ -316,9 +278,7 @@ a {
 .team-title,
 .clients-title {
   margin-bottom: 50px;
-
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -342,13 +302,10 @@ a {
 .about-desc {
   position: absolute;
   bottom: 0;
-
   width: 100%;
   padding: 27px 0;
-
   color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.8);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -356,8 +313,6 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
-
-/*-------- Секция наша команда --------*/
 
 .team {
   background-color: var(--bg-grey-color);
@@ -371,11 +326,8 @@ a {
 .team-card {
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
-
   text-align: center;
 }
 
@@ -386,9 +338,7 @@ a {
 
 .team-list .name {
   margin-bottom: 10px;
-
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -397,7 +347,6 @@ a {
 
 .team-list .post {
   margin-bottom: 16px;
-
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -424,9 +373,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-
   fill: #afb1b8;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -443,8 +390,6 @@ a {
 .social-link:focus .social-icon {
   fill: var(--white-color);
 }
-
-/*-------- Секция клиенты --------*/
 
 .clients-list {
   display: flex;
@@ -467,7 +412,6 @@ a {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -478,7 +422,6 @@ a {
 
 .clients-icon {
   fill: #afb1b8;
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -487,12 +430,9 @@ a {
   fill: var(--accent-color);
 }
 
-/*-------- Футер сайта --------*/
-
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: var(--bg-dark-color);
 }
 
@@ -508,7 +448,6 @@ a {
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-
   color: var(--white-color);
 }
 
@@ -522,25 +461,21 @@ a {
 
 .footer-contacts .map {
   color: var(--white-color);
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts-item {
   color: var(--white-alpha-color);
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -558,9 +493,7 @@ a {
 .footer-social > .text {
   display: inline-block;
   margin-bottom: 20px;
-
   color: var(--white-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -576,9 +509,7 @@ a {
 .footer-form > .text {
   display: block;
   margin-bottom: 20px;
-
   color: var(--white-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -601,7 +532,6 @@ a {
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-
   background-color: transparent;
   color: var(--white-color);
 }
@@ -610,7 +540,6 @@ a {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -618,17 +547,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 200px;
   height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
   border-radius: 4px;
-
   color: var(--white-color);
   background-color: var(--accent-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -638,11 +564,8 @@ a {
 
 .icon-send {
   margin-left: 10px;
-
   fill: var(--white-color);
 }
-
-/*-------- Страница Портфолио --------*/
 
 .filter-list {
   display: flex;
@@ -658,27 +581,20 @@ a {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
-
   color: var(--title-text-color);
   background-color: var(--bg-grey-color);
-
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list-btn:hover,
 .filter-list-btn:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -699,19 +615,16 @@ a {
 .portfolio-list .link {
   color: inherit;
   text-decoration: none;
-
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list .link:hover,
 .portfolio-list .link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-overlay {
   position: relative;
-
   overflow: hidden;
 }
 
@@ -723,18 +636,13 @@ a {
 
 .portfolio-text {
   position: absolute;
-
   padding: 63px 24px;
-
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
-
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-
   transform: translateY(0);
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -754,9 +662,7 @@ a {
 
 .portfolio-list .title {
   margin-bottom: 4px;
-
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -769,18 +675,13 @@ a {
   letter-spacing: 0.03em;
 }
 
-/*-------- Бэкдроп и модальное окно --------*/
 .backdrop {
   position: fixed;
   top: 0;
-
   width: 100%;
   height: 100%;
-
   background-color: rgba(0, 0, 0, 0.2);
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -800,11 +701,8 @@ a {
   width: 528px;
   min-height: 581px;
   padding: 40px;
-
   transform: translate(-50%, -50%) scale(1);
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   background-color: var(--white-color);
 }
 
@@ -812,7 +710,6 @@ a {
   position: absolute;
   top: 8px;
   right: 8px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -820,7 +717,6 @@ a {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
   background-color: transparent;
   cursor: pointer;
 }
@@ -840,9 +736,7 @@ a {
 
 .modal-title {
   margin-bottom: 12px;
-
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -852,7 +746,6 @@ a {
 .modal-label {
   display: block;
   margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -872,7 +765,6 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -888,10 +780,8 @@ a {
   position: absolute;
   top: 50%;
   left: 12px;
-
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   fill: #212121;
 }
 
@@ -904,13 +794,11 @@ a {
   border-radius: 4px;
   outline: none;
   resize: none;
-
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -933,7 +821,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -949,20 +836,17 @@ a {
   margin-right: 7px;
   border: 2px solid #212121;
   border-radius: 2px;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-link {
   margin-left: 3px;
-
   color: var(--accent-color);
   text-decoration: underline;
 }
 
 .modal-btn {
   margin-top: 30px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -971,3 +855,4 @@ a {
 .modal-btn:focus {
   background-color: #188ce8;
 }
+/*# sourceMappingURL=main.css.map */
